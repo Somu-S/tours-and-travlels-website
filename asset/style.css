@@ -609,8 +609,12 @@ textarea{
     width: fit-content;
     margin: 1rem;
     position: absolute;
-    padding: .5rem;
+    padding: 1rem;
     top: 0;
+}
+.learn-btn:hover{
+    background-color: #8C1B21;
+    transition: .3s;
 }
 .learn-btn a{
     color: white;
