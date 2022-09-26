@@ -144,27 +144,33 @@ main{
     background-position: bottom;
 }
 .notice img{
-    height: 30rem;
+    height: 50rem;
 }
 .notice h2{
-    font-size: 2.4rem;
-    color: white;
-    text-align: center;
-    margin: 2rem;
+    font-size: 3.2rem;
+    color: black;
 }
 .notice{
-    margin-top: 2rem;
+    padding: 4rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
+    gap: .5rem;
+}
+.notice-content{
+    max-width: 40%;
+    background-color: white;
+    margin-left: -8rem;
+    z-index: 1;
+    padding: 2rem;
+    margin-top: .5rem;
+    border: 1rem solid #ba3339;
+    border-style: double;
 }
 .notice p{
     font-size: 1.6rem;
-    color: white;
-    max-width: 60%;
-    text-align: center;
-    margin-top: 1rem;
+    color: gray;
 }
 .banner-content{
      display: flex;
@@ -839,6 +845,19 @@ textarea{
     }
     .pkg-sidebar{
         margin-top: 2rem;
+    }
+    .notice-content{
+        max-width: 50%;
+    }
+}
+@media (max-width:360px){
+    .notice{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .notice-content{
+        max-width: 100%;
+        margin: auto;
     }
 }
 @media (min-width:481px) and (max-width:768px){
